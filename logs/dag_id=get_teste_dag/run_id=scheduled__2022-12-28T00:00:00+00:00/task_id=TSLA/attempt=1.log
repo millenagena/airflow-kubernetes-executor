@@ -1,0 +1,26 @@
+[2022-12-29T00:11:43.951+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_teste_dag.TSLA scheduled__2022-12-28T00:00:00+00:00 [queued]>
+[2022-12-29T00:11:44.145+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_teste_dag.TSLA scheduled__2022-12-28T00:00:00+00:00 [queued]>
+[2022-12-29T00:11:44.145+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-29T00:11:44.146+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-29T00:11:44.147+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-29T00:11:44.243+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): TSLA> on 2022-12-28 00:00:00+00:00
+[2022-12-29T00:11:44.246+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2022-12-29T00:11:44.249+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_teste_dag', 'TSLA', 'scheduled__2022-12-28T00:00:00+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpt8u9zeoa']
+[2022-12-29T00:11:44.250+0000] {standard_task_runner.py:83} INFO - Job 73: Subtask TSLA
+[2022-12-29T00:11:44.251+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2022-12-29T00:11:44.307+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-29T00:11:44.413+0000] {task_command.py:384} INFO - Running <TaskInstance: get_teste_dag.TSLA scheduled__2022-12-28T00:00:00+00:00 [running]> on host gettestedagtsla-68001acc3baa46cea7690c0fbfd0ab03
+[2022-12-29T00:11:44.572+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_teste_dag
+AIRFLOW_CTX_TASK_ID=TSLA
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-28T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-28T00:00:00+00:00
+[2022-12-29T00:11:46.169+0000] {logging_mixin.py:117} INFO - 2022-12-28
+[2022-12-29T00:11:46.594+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-29T00:11:46.605+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_teste_dag, task_id=TSLA, execution_date=20221228T000000, start_date=20221229T001143, end_date=20221229T001146
+[2022-12-29T00:11:46.623+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-29T00:11:46.641+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,130 @@
+[2022-12-28T11:24:53.145+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T11:24:53.164+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T11:24:53.165+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T11:24:53.166+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-28T11:24:53.167+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T11:24:53.205+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): AAPL> on 2022-12-27 00:00:00+00:00
+[2022-12-28T11:24:53.246+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2022-12-28T11:24:53.251+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'AAPL', 'scheduled__2022-12-27T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmp8iok4f0n']
+[2022-12-28T11:24:53.254+0000] {standard_task_runner.py:83} INFO - Job 5: Subtask AAPL
+[2022-12-28T11:24:53.256+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2022-12-28T11:24:57.949+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-28T11:24:58.667+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [running]> on host getcryptodagaapl-8fbe087fee7441a989ae67ef57e945c1
+[2022-12-28T11:25:11.648+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=AAPL
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T00:00:00+00:00
+[2022-12-28T11:25:12.452+0000] {logging_mixin.py:117} INFO - - AAPL: No data found for this date range, symbol may be delisted
+[2022-12-28T11:25:12.454+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-28T11:25:12.475+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=AAPL, execution_date=20221227T000000, start_date=20221228T112453, end_date=20221228T112512
+[2022-12-28T11:25:12.546+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-28T11:25:12.575+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-28T13:59:01.784+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T13:59:01.797+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T13:59:01.797+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T13:59:01.798+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-28T13:59:01.798+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T13:59:01.821+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): AAPL> on 2022-12-27 00:00:00+00:00
+[2022-12-28T13:59:01.829+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'AAPL', 'scheduled__2022-12-27T00:00:00+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmp4kpzdxsk']
+[2022-12-28T13:59:01.842+0000] {standard_task_runner.py:83} INFO - Job 40: Subtask AAPL
+[2022-12-28T13:59:01.843+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2022-12-28T13:59:01.844+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2022-12-28T13:59:03.856+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-28T13:59:03.959+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [running]> on host getcryptodagaapl-26e896ce98ca491cacea99506241aeba
+[2022-12-28T13:59:05.719+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=AAPL
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T00:00:00+00:00
+[2022-12-28T13:59:06.395+0000] {logging_mixin.py:117} INFO - - AAPL: No data found for this date range, symbol may be delisted
+[2022-12-28T13:59:06.396+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-28T13:59:06.450+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=AAPL, execution_date=20221227T000000, start_date=20221228T135901, end_date=20221228T135906
+[2022-12-28T13:59:06.783+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-28T13:59:06.873+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-28T23:32:57.117+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:32:57.146+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:32:57.146+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:32:57.147+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-28T23:32:57.147+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:32:57.167+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): AAPL> on 2022-12-27 00:00:00+00:00
+[2022-12-28T23:32:57.170+0000] {standard_task_runner.py:54} INFO - Started process 22 to run task
+[2022-12-28T23:32:57.174+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'AAPL', 'scheduled__2022-12-27T00:00:00+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpeoan_zva']
+[2022-12-28T23:32:57.176+0000] {standard_task_runner.py:83} INFO - Job 46: Subtask AAPL
+[2022-12-28T23:32:57.177+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2022-12-28T23:32:59.374+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-28T23:32:59.464+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [running]> on host getcryptodagaapl-6240804131b546b9bfd5b4266d80c34b
+[2022-12-28T23:32:59.605+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=AAPL
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T00:00:00+00:00
+[2022-12-28T23:33:00.176+0000] {logging_mixin.py:117} INFO - - AAPL: No data found for this date range, symbol may be delisted
+[2022-12-28T23:33:00.180+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-28T23:33:00.252+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=AAPL, execution_date=20221227T000000, start_date=20221228T233257, end_date=20221228T233300
+[2022-12-28T23:33:00.380+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-28T23:33:00.403+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-28T23:40:28.568+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:40:28.578+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:40:28.578+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:40:28.579+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-28T23:40:28.579+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:40:28.649+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): AAPL> on 2022-12-27 00:00:00+00:00
+[2022-12-28T23:40:28.652+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2022-12-28T23:40:28.654+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'AAPL', 'scheduled__2022-12-27T00:00:00+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpgslyny1d']
+[2022-12-28T23:40:28.656+0000] {standard_task_runner.py:83} INFO - Job 54: Subtask AAPL
+[2022-12-28T23:40:28.657+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2022-12-28T23:40:30.210+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-28T23:40:30.370+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [running]> on host getcryptodagaapl-4f452d9bb2fb4e4295372cdae263ac1a
+[2022-12-28T23:40:30.487+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=AAPL
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T00:00:00+00:00
+[2022-12-28T23:40:31.334+0000] {logging_mixin.py:117} INFO - - AAPL: No data found for this date range, symbol may be delisted
+[2022-12-28T23:40:31.337+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-28T23:40:31.348+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=AAPL, execution_date=20221227T000000, start_date=20221228T234028, end_date=20221228T234031
+[2022-12-28T23:40:31.408+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-28T23:40:31.426+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-28T23:47:26.021+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:47:26.037+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:47:26.037+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:47:26.037+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-28T23:47:26.038+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:47:26.063+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): AAPL> on 2022-12-27 00:00:00+00:00
+[2022-12-28T23:47:26.066+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2022-12-28T23:47:26.069+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'AAPL', 'scheduled__2022-12-27T00:00:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpopnmzt4e']
+[2022-12-28T23:47:26.071+0000] {standard_task_runner.py:83} INFO - Job 61: Subtask AAPL
+[2022-12-28T23:47:26.072+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2022-12-28T23:47:26.115+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-28T23:47:26.202+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.AAPL scheduled__2022-12-27T00:00:00+00:00 [running]> on host getcryptodagaapl-8512fc577011435fbb1ee5411acea00b
+[2022-12-28T23:47:26.309+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=AAPL
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T00:00:00+00:00
+[2022-12-28T23:47:28.021+0000] {logging_mixin.py:117} INFO - - AAPL: No data found for this date range, symbol may be delisted
+[2022-12-28T23:47:28.024+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-28T23:47:28.038+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=AAPL, execution_date=20221227T000000, start_date=20221228T234726, end_date=20221228T234728
+[2022-12-28T23:47:28.085+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-28T23:47:28.105+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

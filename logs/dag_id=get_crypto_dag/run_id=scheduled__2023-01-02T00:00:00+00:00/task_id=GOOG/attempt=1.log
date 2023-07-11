@@ -1,0 +1,104 @@
+[2023-01-03T20:24:02.729+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-01-03T20:24:02.741+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-01-03T20:24:02.741+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-03T20:24:02.742+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-01-03T20:24:02.742+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-03T20:24:02.756+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): GOOG> on 2023-01-02 00:00:00+00:00
+[2023-01-03T20:24:02.758+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2023-01-03T20:24:02.761+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'GOOG', 'scheduled__2023-01-02T00:00:00+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmp6_51otag']
+[2023-01-03T20:24:02.763+0000] {standard_task_runner.py:83} INFO - Job 84: Subtask GOOG
+[2023-01-03T20:24:02.764+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2023-01-03T20:24:04.074+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2023-01-03T20:24:04.182+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [running]> on host getcryptodaggoog-96675820081d40cab362117b62e1c231
+[2023-01-03T20:24:04.289+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=GOOG
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-02T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-02T00:00:00+00:00
+[2023-01-03T20:24:05.306+0000] {logging_mixin.py:117} INFO - - GOOG: No data found for this date range, symbol may be delisted
+[2023-01-03T20:24:05.310+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-01-03T20:24:05.320+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=GOOG, execution_date=20230102T000000, start_date=20230103T202402, end_date=20230103T202405
+[2023-01-03T20:24:05.361+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-01-03T20:24:05.380+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-01-03T20:29:42.038+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-01-03T20:29:42.050+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-01-03T20:29:42.051+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-03T20:29:42.051+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-01-03T20:29:42.052+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-03T20:29:42.068+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): GOOG> on 2023-01-02 00:00:00+00:00
+[2023-01-03T20:29:42.071+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2023-01-03T20:29:42.074+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'GOOG', 'scheduled__2023-01-02T00:00:00+00:00', '--job-id', '88', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpz4d8kpdc']
+[2023-01-03T20:29:42.075+0000] {standard_task_runner.py:83} INFO - Job 88: Subtask GOOG
+[2023-01-03T20:29:42.076+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2023-01-03T20:29:44.067+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2023-01-03T20:29:44.192+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [running]> on host getcryptodaggoog-c4c4ee31a72a4aab983a64074dbcb461
+[2023-01-03T20:29:44.354+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=GOOG
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-02T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-02T00:00:00+00:00
+[2023-01-03T20:29:45.022+0000] {logging_mixin.py:117} INFO - - GOOG: No data found for this date range, symbol may be delisted
+[2023-01-03T20:29:45.025+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-01-03T20:29:45.036+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=GOOG, execution_date=20230102T000000, start_date=20230103T202942, end_date=20230103T202945
+[2023-01-03T20:29:45.078+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-01-03T20:29:45.097+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-01-03T20:35:10.210+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-01-03T20:35:10.218+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-01-03T20:35:10.219+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-03T20:35:10.219+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-01-03T20:35:10.219+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-03T20:35:10.242+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): GOOG> on 2023-01-02 00:00:00+00:00
+[2023-01-03T20:35:10.244+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2023-01-03T20:35:10.247+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'GOOG', 'scheduled__2023-01-02T00:00:00+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpzuen11a_']
+[2023-01-03T20:35:10.248+0000] {standard_task_runner.py:83} INFO - Job 90: Subtask GOOG
+[2023-01-03T20:35:10.250+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2023-01-03T20:35:11.646+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2023-01-03T20:35:11.714+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [running]> on host getcryptodaggoog-44884e83c58940acafefcca4cc82ce43
+[2023-01-03T20:35:11.981+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=GOOG
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-02T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-02T00:00:00+00:00
+[2023-01-03T20:35:12.610+0000] {logging_mixin.py:117} INFO - - GOOG: No data found for this date range, symbol may be delisted
+[2023-01-03T20:35:12.614+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-01-03T20:35:12.625+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=GOOG, execution_date=20230102T000000, start_date=20230103T203510, end_date=20230103T203512
+[2023-01-03T20:35:12.659+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-01-03T20:35:12.678+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-01-03T21:15:13.202+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-01-03T21:15:13.213+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [queued]>
+[2023-01-03T21:15:13.214+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-03T21:15:13.237+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-01-03T21:15:13.238+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-03T21:15:13.254+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): GOOG> on 2023-01-02 00:00:00+00:00
+[2023-01-03T21:15:13.257+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2023-01-03T21:15:13.260+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'GOOG', 'scheduled__2023-01-02T00:00:00+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpc1kthc9e']
+[2023-01-03T21:15:13.261+0000] {standard_task_runner.py:83} INFO - Job 108: Subtask GOOG
+[2023-01-03T21:15:13.263+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2023-01-03T21:15:14.788+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2023-01-03T21:15:14.974+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.GOOG scheduled__2023-01-02T00:00:00+00:00 [running]> on host getcryptodaggoog-c7355f3d86a34edc87a1fa901f8538d4
+[2023-01-03T21:15:15.175+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=GOOG
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-02T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-02T00:00:00+00:00
+[2023-01-03T21:15:15.841+0000] {logging_mixin.py:117} INFO - - GOOG: No data found for this date range, symbol may be delisted
+[2023-01-03T21:15:15.844+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-01-03T21:15:15.858+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=GOOG, execution_date=20230102T000000, start_date=20230103T211513, end_date=20230103T211515
+[2023-01-03T21:15:15.898+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-01-03T21:15:15.956+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

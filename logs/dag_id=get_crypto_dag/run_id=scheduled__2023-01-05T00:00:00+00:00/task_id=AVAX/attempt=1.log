@@ -1,0 +1,27 @@
+[2023-01-09T17:35:56.972+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AVAX scheduled__2023-01-05T00:00:00+00:00 [queued]>
+[2023-01-09T17:35:57.037+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.AVAX scheduled__2023-01-05T00:00:00+00:00 [queued]>
+[2023-01-09T17:35:57.037+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-09T17:35:57.038+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-01-09T17:35:57.038+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-09T17:35:57.052+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): AVAX> on 2023-01-05 00:00:00+00:00
+[2023-01-09T17:35:57.055+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2023-01-09T17:35:57.058+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'AVAX', 'scheduled__2023-01-05T00:00:00+00:00', '--job-id', '127', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpn8lv7rby']
+[2023-01-09T17:35:57.059+0000] {standard_task_runner.py:83} INFO - Job 127: Subtask AVAX
+[2023-01-09T17:35:57.060+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2023-01-09T17:35:58.534+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2023-01-09T17:35:58.599+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.AVAX scheduled__2023-01-05T00:00:00+00:00 [running]> on host getcryptodagavax-e83459901fd94bdb9857e03d5d0d78b8
+[2023-01-09T17:35:58.703+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=AVAX
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-05T00:00:00+00:00
+[2023-01-09T17:35:59.045+0000] {logging_mixin.py:117} INFO - Got error from yahoo api for ticker AVAX, Error: {'code': 'Not Found', 'description': 'No data found, symbol may be delisted'}
+[2023-01-09T17:35:59.046+0000] {logging_mixin.py:117} INFO - - AVAX: No data found for this date range, symbol may be delisted
+[2023-01-09T17:35:59.054+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-01-09T17:35:59.066+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=AVAX, execution_date=20230105T000000, start_date=20230109T173556, end_date=20230109T173559
+[2023-01-09T17:35:59.090+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-01-09T17:35:59.110+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

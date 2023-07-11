@@ -1,0 +1,75 @@
+[2023-01-09T17:40:04.153+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.TSLA scheduled__2023-01-07T00:00:00+00:00 [queued]>
+[2023-01-09T17:40:04.164+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.TSLA scheduled__2023-01-07T00:00:00+00:00 [queued]>
+[2023-01-09T17:40:04.165+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-09T17:40:04.165+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-01-09T17:40:04.166+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-09T17:40:04.180+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): TSLA> on 2023-01-07 00:00:00+00:00
+[2023-01-09T17:40:04.183+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2023-01-09T17:40:04.186+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'TSLA', 'scheduled__2023-01-07T00:00:00+00:00', '--job-id', '151', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmplli5qabz']
+[2023-01-09T17:40:04.187+0000] {standard_task_runner.py:83} INFO - Job 151: Subtask TSLA
+[2023-01-09T17:40:04.188+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2023-01-09T17:40:05.336+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2023-01-09T17:40:05.428+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.TSLA scheduled__2023-01-07T00:00:00+00:00 [running]> on host getcryptodagtsla-94ab595a6736493ca87046a665cf9c7f
+[2023-01-09T17:40:05.556+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=TSLA
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-07T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-07T00:00:00+00:00
+[2023-01-09T17:40:06.271+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-01-09T17:40:06.281+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=TSLA, execution_date=20230107T000000, start_date=20230109T174004, end_date=20230109T174006
+[2023-01-09T17:40:06.347+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-01-09T17:40:06.386+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-01-09T18:23:37.189+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.TSLA scheduled__2023-01-07T00:00:00+00:00 [queued]>
+[2023-01-09T18:23:37.198+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.TSLA scheduled__2023-01-07T00:00:00+00:00 [queued]>
+[2023-01-09T18:23:37.199+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-09T18:23:37.199+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-01-09T18:23:37.200+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-09T18:23:37.213+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): TSLA> on 2023-01-07 00:00:00+00:00
+[2023-01-09T18:23:37.216+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2023-01-09T18:23:37.219+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'TSLA', 'scheduled__2023-01-07T00:00:00+00:00', '--job-id', '159', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpu_3mp17x']
+[2023-01-09T18:23:37.221+0000] {standard_task_runner.py:83} INFO - Job 159: Subtask TSLA
+[2023-01-09T18:23:37.222+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2023-01-09T18:23:38.554+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2023-01-09T18:23:38.640+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.TSLA scheduled__2023-01-07T00:00:00+00:00 [running]> on host getcryptodagtsla-be3060625ea34c1b93676ed32d85c0a1
+[2023-01-09T18:23:38.747+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=TSLA
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-07T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-07T00:00:00+00:00
+[2023-01-09T18:23:39.540+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-01-09T18:23:39.550+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=TSLA, execution_date=20230107T000000, start_date=20230109T182337, end_date=20230109T182339
+[2023-01-09T18:23:39.589+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-01-09T18:23:39.605+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-01-09T18:25:41.941+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.TSLA scheduled__2023-01-07T00:00:00+00:00 [queued]>
+[2023-01-09T18:25:41.952+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.TSLA scheduled__2023-01-07T00:00:00+00:00 [queued]>
+[2023-01-09T18:25:41.953+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-09T18:25:41.953+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-01-09T18:25:41.954+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-09T18:25:41.972+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): TSLA> on 2023-01-07 00:00:00+00:00
+[2023-01-09T18:25:41.976+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2023-01-09T18:25:41.979+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'TSLA', 'scheduled__2023-01-07T00:00:00+00:00', '--job-id', '167', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmp533ku27i']
+[2023-01-09T18:25:41.980+0000] {standard_task_runner.py:83} INFO - Job 167: Subtask TSLA
+[2023-01-09T18:25:41.981+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2023-01-09T18:25:43.328+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2023-01-09T18:25:43.464+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.TSLA scheduled__2023-01-07T00:00:00+00:00 [running]> on host getcryptodagtsla-af1203cdd43947498c27784a1d91220c
+[2023-01-09T18:25:43.643+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=TSLA
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-07T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-07T00:00:00+00:00
+[2023-01-09T18:25:44.253+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-01-09T18:25:44.265+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=TSLA, execution_date=20230107T000000, start_date=20230109T182541, end_date=20230109T182544
+[2023-01-09T18:25:44.286+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-01-09T18:25:44.342+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

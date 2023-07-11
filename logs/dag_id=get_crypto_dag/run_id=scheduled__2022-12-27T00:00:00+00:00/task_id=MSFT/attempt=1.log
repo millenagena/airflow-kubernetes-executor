@@ -1,0 +1,130 @@
+[2022-12-28T11:25:35.160+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T11:25:35.186+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T11:25:35.187+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T11:25:35.188+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-28T11:25:35.188+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T11:25:35.259+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): MSFT> on 2022-12-27 00:00:00+00:00
+[2022-12-28T11:25:35.264+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2022-12-28T11:25:35.269+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'MSFT', 'scheduled__2022-12-27T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpsbjt8vw8']
+[2022-12-28T11:25:35.271+0000] {standard_task_runner.py:83} INFO - Job 7: Subtask MSFT
+[2022-12-28T11:25:35.273+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2022-12-28T11:25:38.586+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-28T11:25:38.751+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [running]> on host getcryptodagmsft-cc5292c8fe08410094f643055faf7a97
+[2022-12-28T11:25:41.589+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=MSFT
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T00:00:00+00:00
+[2022-12-28T11:25:42.151+0000] {logging_mixin.py:117} INFO - - MSFT: No data found for this date range, symbol may be delisted
+[2022-12-28T11:25:42.152+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-28T11:25:42.171+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=MSFT, execution_date=20221227T000000, start_date=20221228T112535, end_date=20221228T112542
+[2022-12-28T11:25:42.204+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-28T11:25:42.229+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-28T13:59:17.990+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T13:59:18.000+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T13:59:18.001+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T13:59:18.001+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-28T13:59:18.002+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T13:59:18.018+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): MSFT> on 2022-12-27 00:00:00+00:00
+[2022-12-28T13:59:18.021+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2022-12-28T13:59:18.024+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'MSFT', 'scheduled__2022-12-27T00:00:00+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpzr6s5u8c']
+[2022-12-28T13:59:18.026+0000] {standard_task_runner.py:83} INFO - Job 42: Subtask MSFT
+[2022-12-28T13:59:18.027+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2022-12-28T13:59:20.127+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-28T13:59:20.221+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [running]> on host getcryptodagmsft-31927432c80c492597d670f0006b47ce
+[2022-12-28T13:59:22.175+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=MSFT
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T00:00:00+00:00
+[2022-12-28T13:59:23.054+0000] {logging_mixin.py:117} INFO - - MSFT: No data found for this date range, symbol may be delisted
+[2022-12-28T13:59:23.055+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-28T13:59:23.067+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=MSFT, execution_date=20221227T000000, start_date=20221228T135917, end_date=20221228T135923
+[2022-12-28T13:59:23.093+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-28T13:59:23.151+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-28T23:33:09.608+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:33:09.621+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:33:09.622+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:33:09.622+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-28T23:33:09.623+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:33:09.639+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): MSFT> on 2022-12-27 00:00:00+00:00
+[2022-12-28T23:33:09.642+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2022-12-28T23:33:09.644+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'MSFT', 'scheduled__2022-12-27T00:00:00+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpki5iigte']
+[2022-12-28T23:33:09.646+0000] {standard_task_runner.py:83} INFO - Job 48: Subtask MSFT
+[2022-12-28T23:33:09.647+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2022-12-28T23:33:11.491+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-28T23:33:11.572+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [running]> on host getcryptodagmsft-3e0af52891a54b59abdc63660fcaf820
+[2022-12-28T23:33:12.175+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=MSFT
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T00:00:00+00:00
+[2022-12-28T23:33:12.728+0000] {logging_mixin.py:117} INFO - - MSFT: No data found for this date range, symbol may be delisted
+[2022-12-28T23:33:12.731+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-28T23:33:12.743+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=MSFT, execution_date=20221227T000000, start_date=20221228T233309, end_date=20221228T233312
+[2022-12-28T23:33:12.782+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-28T23:33:12.862+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-28T23:40:41.461+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:40:41.471+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:40:41.472+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:40:41.472+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-28T23:40:41.473+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:40:41.488+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): MSFT> on 2022-12-27 00:00:00+00:00
+[2022-12-28T23:40:41.492+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2022-12-28T23:40:41.495+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'MSFT', 'scheduled__2022-12-27T00:00:00+00:00', '--job-id', '56', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmpxgx_679u']
+[2022-12-28T23:40:41.497+0000] {standard_task_runner.py:83} INFO - Job 56: Subtask MSFT
+[2022-12-28T23:40:41.498+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2022-12-28T23:40:43.579+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-28T23:40:43.758+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [running]> on host getcryptodagmsft-f7d71f513b7c4c3483cb2ee21e16cb54
+[2022-12-28T23:40:43.975+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=MSFT
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T00:00:00+00:00
+[2022-12-28T23:40:44.513+0000] {logging_mixin.py:117} INFO - - MSFT: No data found for this date range, symbol may be delisted
+[2022-12-28T23:40:44.517+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-28T23:40:44.528+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=MSFT, execution_date=20221227T000000, start_date=20221228T234041, end_date=20221228T234044
+[2022-12-28T23:40:44.587+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-28T23:40:44.607+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-28T23:47:22.668+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:47:22.680+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [queued]>
+[2022-12-28T23:47:22.680+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:47:22.681+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-28T23:47:22.681+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-28T23:47:22.698+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): MSFT> on 2022-12-27 00:00:00+00:00
+[2022-12-28T23:47:22.700+0000] {standard_task_runner.py:54} INFO - Started process 21 to run task
+[2022-12-28T23:47:22.703+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'get_crypto_dag', 'MSFT', 'scheduled__2022-12-27T00:00:00+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks_dag.py', '--cfg-path', '/tmp/tmp3w1pm408']
+[2022-12-28T23:47:22.704+0000] {standard_task_runner.py:83} INFO - Job 60: Subtask MSFT
+[2022-12-28T23:47:22.705+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/get_stocks_dag.py
+[2022-12-28T23:47:22.755+0000] {logging_mixin.py:117} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3425 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-12-28T23:47:22.867+0000] {task_command.py:384} INFO - Running <TaskInstance: get_crypto_dag.MSFT scheduled__2022-12-27T00:00:00+00:00 [running]> on host getcryptodagmsft-b4dbbe1e517449768bb08e3417ebaf94
+[2022-12-28T23:47:22.993+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_crypto_dag
+AIRFLOW_CTX_TASK_ID=MSFT
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-27T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-27T00:00:00+00:00
+[2022-12-28T23:47:25.292+0000] {logging_mixin.py:117} INFO - - MSFT: No data found for this date range, symbol may be delisted
+[2022-12-28T23:47:25.297+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-28T23:47:25.309+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=get_crypto_dag, task_id=MSFT, execution_date=20221227T000000, start_date=20221228T234722, end_date=20221228T234725
+[2022-12-28T23:47:25.346+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-28T23:47:25.368+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
